@@ -3,7 +3,7 @@ entries:
   dmt:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-09-11T15:45:46.547559497+02:00"
+    created: "2023-09-11T16:34:53.500380222+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -29,7 +29,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.545090986+02:00"
+    created: "2023-09-11T16:34:53.49943814+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -51,7 +51,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.542835085+02:00"
+    created: "2023-09-11T16:34:53.497016211+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -73,7 +73,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.541974737+02:00"
+    created: "2023-09-11T16:34:53.495451486+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -95,7 +95,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.541098639+02:00"
+    created: "2023-09-11T16:34:53.486645249+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -117,7 +117,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.539924905+02:00"
+    created: "2023-09-11T16:34:53.48568442+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -140,7 +140,7 @@ entries:
   frontend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.547805197+02:00"
+    created: "2023-09-11T16:34:53.500611673+02:00"
     description: A Helm chart for DMT Frontend
     digest: e00d9e169c18450b933ae116388a47fec8f59f117df95b04b45d1076e461b64e
     name: frontend
@@ -151,7 +151,17 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.549123259+02:00"
+    created: "2023-09-11T16:34:53.502278204+02:00"
+    description: Keycloak Helm chart needed for local development
+    digest: c2eaf7c70a5cc45fa3a400165e05fd4e64a0b77415f5a49eb4a74bdd9f7b6076
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T16:34:53.501859216+02:00"
     description: Keycloak Helm chart needed for local development
     digest: 8eaada9a31c00131a56d46e264861394c3efab7dec8e7f0b107bb565d4d66815
     name: keycloak
@@ -161,7 +171,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.548659095+02:00"
+    created: "2023-09-11T16:34:53.501450227+02:00"
     description: Keycloak Helm chart needed for local development
     digest: ed2537d48adf3d456ebad2bb376e6758d3a6bf9a95781e69892636a9e7203fa1
     name: keycloak
@@ -171,7 +181,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.548241962+02:00"
+    created: "2023-09-11T16:34:53.501042162+02:00"
     description: Keycloak Helm chart needed for local development
     digest: 7c665071c76c1d36fae144a17bc1471bc7c35c9edcf81e82e1ea1f42bd9c2128
     name: keycloak
@@ -182,7 +192,17 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T15:45:46.549285603+02:00"
+    created: "2023-09-11T16:34:53.50258524+02:00"
+    description: MySQL Helm chart needed for local development
+    digest: d7bb5f9b0d73cba8c3c16b99b87e97f1cad9259ca3e9277674319414ab92fe39
+    name: mysql
+    type: application
+    urls:
+    - mysql-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T16:34:53.502435862+02:00"
     description: MySQL Helm chart needed for local development
     digest: cb7fb1470cc62d108d4c7a2c0401e023321f286e7e71b7acaa578d97ded60899
     name: mysql
@@ -190,4 +210,4 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-11T15:45:46.53885147+02:00"
+generated: "2023-09-11T16:34:53.484609849+02:00"
