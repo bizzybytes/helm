@@ -1,9 +1,32 @@
 apiVersion: v1
 entries:
+  dmt:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T12:40:42.744233265+02:00"
+    dependencies:
+    - condition: id-provider.enabled
+      name: keycloak
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.0
+    - condition: database.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.0
+    description: DMT Helm chart for Kubernetes
+    digest: f5300aacb8a031d05b30f674b1366b60d7cd0586bb1be8cdd4422459d9c0f27b
+    maintainers:
+    - email: vlado.dimitriev@thalesgroup.com
+      name: Vlado Dimitriev
+    name: dmt
+    type: application
+    urls:
+    - dmt-0.1.1.tgz
+    version: 0.1.1
   keycloak:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T12:25:39.531497226+02:00"
+    created: "2023-09-11T12:40:42.744737198+02:00"
     description: Keycloak Helm chart needed for local development
     digest: 7c665071c76c1d36fae144a17bc1471bc7c35c9edcf81e82e1ea1f42bd9c2128
     name: keycloak
@@ -14,7 +37,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T12:25:39.531697755+02:00"
+    created: "2023-09-11T12:40:42.745239089+02:00"
     description: MySQL Helm chart needed for local development
     digest: cb7fb1470cc62d108d4c7a2c0401e023321f286e7e71b7acaa578d97ded60899
     name: mysql
@@ -22,4 +45,4 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-11T12:25:39.530964558+02:00"
+generated: "2023-09-11T12:40:42.743104565+02:00"
