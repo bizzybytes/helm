@@ -3,7 +3,29 @@ entries:
   dmt:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T12:40:42.744233265+02:00"
+    created: "2023-09-11T14:03:53.559793409+02:00"
+    dependencies:
+    - condition: id-provider.enabled
+      name: keycloak
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.1
+    - condition: database.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.0
+    description: DMT Helm chart for Kubernetes
+    digest: bcbb453eb28067bf1156c9531e9514acdb33566dfcddbc0be2a985027273b325
+    maintainers:
+    - email: vlado.dimitriev@thalesgroup.com
+      name: Vlado Dimitriev
+    name: dmt
+    type: application
+    urls:
+    - dmt-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T14:03:53.558167521+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -26,7 +48,17 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T12:40:42.744737198+02:00"
+    created: "2023-09-11T14:03:53.561237653+02:00"
+    description: Keycloak Helm chart needed for local development
+    digest: ed2537d48adf3d456ebad2bb376e6758d3a6bf9a95781e69892636a9e7203fa1
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T14:03:53.56081115+02:00"
     description: Keycloak Helm chart needed for local development
     digest: 7c665071c76c1d36fae144a17bc1471bc7c35c9edcf81e82e1ea1f42bd9c2128
     name: keycloak
@@ -37,7 +69,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T12:40:42.745239089+02:00"
+    created: "2023-09-11T14:03:53.56204129+02:00"
     description: MySQL Helm chart needed for local development
     digest: cb7fb1470cc62d108d4c7a2c0401e023321f286e7e71b7acaa578d97ded60899
     name: mysql
@@ -45,4 +77,4 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-11T12:40:42.743104565+02:00"
+generated: "2023-09-11T14:03:53.551943795+02:00"
