@@ -3,7 +3,29 @@ entries:
   dmt:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.238436747+02:00"
+    created: "2023-09-11T14:38:27.231314604+02:00"
+    dependencies:
+    - condition: id-provider.enabled
+      name: keycloak
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.2
+    - condition: database.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/bizzybytes/helm/tcp4i
+      version: 0.1.0
+    description: DMT Helm chart for Kubernetes
+    digest: 10f86dad805f067e3b11771959c79b38669944d2beaf478ee9d836ff410ad757
+    maintainers:
+    - email: vlado.dimitriev@thalesgroup.com
+      name: Vlado Dimitriev
+    name: dmt
+    type: application
+    urls:
+    - dmt-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T14:38:27.22973914+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -25,7 +47,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.237323738+02:00"
+    created: "2023-09-11T14:38:27.220754928+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -47,7 +69,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.234922954+02:00"
+    created: "2023-09-11T14:38:27.219695884+02:00"
     dependencies:
     - condition: id-provider.enabled
       name: keycloak
@@ -70,7 +92,17 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.239548947+02:00"
+    created: "2023-09-11T14:38:27.232948314+02:00"
+    description: Keycloak Helm chart needed for local development
+    digest: 8eaada9a31c00131a56d46e264861394c3efab7dec8e7f0b107bb565d4d66815
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-11T14:38:27.232547936+02:00"
     description: Keycloak Helm chart needed for local development
     digest: ed2537d48adf3d456ebad2bb376e6758d3a6bf9a95781e69892636a9e7203fa1
     name: keycloak
@@ -80,7 +112,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.23907158+02:00"
+    created: "2023-09-11T14:38:27.232117492+02:00"
     description: Keycloak Helm chart needed for local development
     digest: 7c665071c76c1d36fae144a17bc1471bc7c35c9edcf81e82e1ea1f42bd9c2128
     name: keycloak
@@ -91,7 +123,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T14:24:40.239712114+02:00"
+    created: "2023-09-11T14:38:27.233107074+02:00"
     description: MySQL Helm chart needed for local development
     digest: cb7fb1470cc62d108d4c7a2c0401e023321f286e7e71b7acaa578d97ded60899
     name: mysql
@@ -99,4 +131,4 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-11T14:24:40.232762217+02:00"
+generated: "2023-09-11T14:38:27.218601384+02:00"
